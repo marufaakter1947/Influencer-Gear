@@ -16,7 +16,16 @@
 .body{
     background-color: #AAAAAA;
 }
-
+.btn-primary{
+    background-color: #E02C6D;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 24px;
+    border-radius: 41px;
+    border: none;
+    margin-top: 16px;
+}
 
 /* _------------Nab bar style-------------- */
 .navbar{
@@ -46,3 +55,25 @@
     color: #000000;
 }
 /* -----------Banner styles---------- */
+.banner{
+    /* gap: 133px;
+    margin-left: 120px;
+    margin-right: 132px; */
+    width: 85%;
+    margin: 0 auto;
+    justify-content: space-between;
+    gap: 133px;
+    align-items: center;
+}
+.banner-title{
+    font-size: 3.25rem;
+    font-weight: bold;
+    color:var(--primary-color);
+    margin-bottom: 1rem;
+}
+.banner-image img{
+    width: 100%;
+    background-image: url("./images/Circle\ design.svg");
+    height: 475px;
+    width: 475px;
+}

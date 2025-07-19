@@ -27,14 +27,14 @@
     margin-top: 16px;
 }
 
-/* _------------Nab bar style-------------- */
+/* _------------Nav bar style-------------- */
 .navbar{
     justify-content: space-between;
     margin: 85px 120px 50px 120px;
    
 }
 .navbar h2{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
     color: var(--primary-color);
 }
@@ -54,11 +54,9 @@
 .nav-icon{
     color: #000000;
 }
+
 /* -----------Banner styles---------- */
 .banner{
-    /* gap: 133px;
-    margin-left: 120px;
-    margin-right: 132px; */
     width: 85%;
     margin: 0 auto;
     justify-content: space-between;
@@ -74,6 +72,35 @@
 .banner-image img{
     width: 100%;
     background-image: url("./images/Circle\ design.svg");
-    height: 475px;
-    width: 475px;
+    /* height: 475px;
+    width: 475px; */
+    background-size: contain;
+background-repeat: no-repeat;
+}
+@media screen and (min-width:577px) and (max-width:2000px){
+    .navbar-mobile{
+    display: none;
+}
+}
+
+
+@media screen and (max-width:576px){
+    .banner{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+    }
+    .navbar{
+        display: none;
+       
+    }
+   .navbar-mobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+   }
+   
 }

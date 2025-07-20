@@ -16,7 +16,7 @@
 .body{
     background-color: #AAAAAA;
 }
-.btn-primary{
+.btn-primary,.feature-btn{
     background-color: #E02C6D;
     color: #FFFFFF;
     font-size: 1rem;
@@ -152,6 +152,33 @@ background-repeat: no-repeat;
             text-align: end;
             padding-right: 15px;
          }
+
+          /* -------------section features------------ */
+          .feature{
+            max-width: 1110px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 96px;
+            margin-bottom: 100px;
+          }
+          .feature-title{
+            font-size: 2.25rem;
+            font-weight: bold;
+            color: #0A0826;
+            margin-bottom: 16px;
+          }
+          .feature-subtitle{
+            font-size: 1rem;
+            font-weight: bold;
+            color:#6C6C6C;
+            margin-bottom: 16px;
+          }
+          .feature-btn{
+border-radius: 0px;
+          }
+
 
 /* ----------medium device---------- */
 @media screen and (min-width:577px) and (max-width:992px){

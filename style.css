@@ -114,8 +114,9 @@ background-repeat: no-repeat;
    .company{
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
-    justify-content: center;
-    align-items: center;
+    row-gap: 30px;
+    
+    padding-left: 60px;
    }
    
 }

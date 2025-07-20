@@ -54,6 +54,9 @@
 .nav-icon{
     color: #000000;
 }
+ .navbar-mobile{
+    display: none;
+}
 
 /* -----------Banner styles---------- */
 .banner{
@@ -86,13 +89,93 @@ background-repeat: no-repeat;
     grid-template-columns: repeat(7,1fr);
     margin-top: 70px;
 }
-@media screen and (min-width:577px) and (max-width:2000px){
+
+         /* ----------Popular collection section---------- */
+         .collection{
+            max-width: 1047px;
+            margin: 0 auto;
+         }
+         .collection-title{
+            font-size: 1.75rem;
+            font-weight: 600;
+            color:#3A3A3A;
+            text-align: center;
+            margin-top: 100px;
+            margin-bottom: 30px;
+         }
+         .collection-container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            row-gap: 30px;
+         }
+.card{
+    background-color: #FFFFFF;
+    max-width: 330px;
+    padding: 1rem;
+    border-radius: 5px;
+            box-shadow:0 0 40px 0 #262626;
+
+}
+.card-title{
+    font-size: 1.75rem;
+    font-weight: 500;
+    color:rgba(24, 25, 31, 1);
+    margin-top: 16px;
+    margin-bottom: 6px;
+}
+.price{
+    font-size: 1.5rem;
+    font-weight: normal;
+    color:rgba(0, 0, 0, 0.87);
+}
+         .rating-icon{
+            color:#FF9900;
+            display: flex;
+            gap: 12px;
+         }
+         .ratings{
+            font-size: 1rem;
+            font-weight: bold;
+            color: rgba(94, 99, 102, 1);
+         }
+         .card-subtitle{
+            font-size: 1rem;
+            font-weight: bold;
+            color: rgba(120, 120, 133, 1);
+         }
+         .see-more-products{
+            color:rgba(224, 44, 109, 0.87);
+            font-size: 1rem;
+            font-weight: bold;
+            margin-top: 50px;
+            margin-bottom: 100px;
+            text-align: end;
+            padding-right: 15px;
+         }
+
+/* ----------medium device---------- */
+@media screen and (min-width:577px) and (max-width:992px){
     .navbar-mobile{
     display: none;
 }
+
+ .company{
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    place-items: center;
+    justify-items: center;
+}
+ .collection-container{
+            grid-template-columns: repeat(2,1fr);
+             place-items: center;
+         }
+         .see-more-products{
+            margin-right: 35px;
+         }
+
 }
 
-
+/* ---------small device--------- */
 @media screen and (max-width:576px){
     .banner{
         flex-direction: column-reverse;
@@ -106,7 +189,7 @@ background-repeat: no-repeat;
        
     }
    .navbar-mobile{
-    display: flex;
+    display: flex; display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
@@ -115,8 +198,15 @@ background-repeat: no-repeat;
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
     row-gap: 30px;
-    
-    padding-left: 60px;
+     place-items: center;
+    justify-items: center;
    }
-   
+   .collection-container{
+            grid-template-columns: repeat(1,1fr);
+            place-items: center;
+         }
+         .see-more-products{
+            margin-right: 45px;
+         }
+
 }

@@ -30,7 +30,8 @@
 /* _------------Nav bar style-------------- */
 .navbar{
     justify-content: space-between;
-    margin: 85px 120px 50px 120px;
+    margin: 0px 120px 50px 120px;
+    padding-top: 85px;
    
 }
 .navbar h2{
@@ -161,7 +162,7 @@ background-repeat: no-repeat;
             justify-content: space-between;
             align-items: center;
             gap: 96px;
-            margin-bottom: 100px;
+            padding-bottom: 100px;
           }
           .feature-title{
             font-size: 2.25rem;
@@ -178,7 +179,40 @@ background-repeat: no-repeat;
           .feature-btn{
 border-radius: 0px;
           }
+          .feature-image img{
+            max-width: 400px;
+          }
+          /* ------------------Footer style---------- */
+          .footer-title{
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #FFFFFF;
+            
+            
+          }
+          .footer-subtitle{
+            font-size: 0.87rem;
+            font-weight: bold;
+            color: rgba(217, 219, 225, 1);
+          }
+          .footer{
+            background-color: rgb(23, 22, 22);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+.footer-content{
+    /* max-width: 262px; */
+    text-align: center;
+    padding-top: 50px;
 
+}
+.footer-content i{
+    color: #FFFFFF;
+    margin-right: 15px;
+    margin-top: 17px;
+    margin-bottom: 50px;
+}
 
 /* ----------medium device---------- */
 @media screen and (min-width:577px) and (max-width:992px){
@@ -213,7 +247,7 @@ border-radius: 0px;
     }
     .navbar{
         display: none;
-       
+       o
     }
    .navbar-mobile{
     display: flex; display: flex;
@@ -235,5 +269,10 @@ border-radius: 0px;
          .see-more-products{
             margin-right: 45px;
          }
-
+ .feature{
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ }
 }
